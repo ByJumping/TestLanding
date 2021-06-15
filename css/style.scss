@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
 a {
   text-decoration: none;
 }
@@ -64,6 +63,9 @@ a {
     font-size: 18px;
     line-height: 23px;
     color: #FFFFFF;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__block {
@@ -91,6 +93,10 @@ a {
   border-radius: 4px;
   padding: 16px 60px;
   display: inline-block;
+  transition: 0.3s;
+  &:hover {
+    background: #f20022;
+  }
 }
 
 .main {
@@ -168,5 +174,88 @@ a {
     position: absolute;
     right: 0;
     top: 24px;
+  }
+}
+
+.registration {
+  &__form {
+    width: 490px;
+    height: 472px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+  }
+
+  &__heading {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #2E2D35;
+    padding-top: 60px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 24px;
+    color: #474351;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 60px;
+  }
+
+  &__input {
+    width: 370px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #DDDAE7;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 325;
+    font-size: 16px;
+    line-height: 100%;
+    color: #918D9A;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    padding-right: 16px;
+    &:focus::placeholder {
+      text-indent: 500px;
+      transition: text-indent 0.7s ease;
+    }
+  }
+
+  &__button {
+    width: 370px;
+    height: 50px;
+    background: #F25B24;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 16px;
+    border: none;
+    transition: 0.3s;
+    &:hover {
+      background: #f20022;
+    }
+  }
+
+  &__form {
+    text-align: center;
+    position: relative;
+  }
+
+  &__close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    transition: 0.3s;
+    &:hover {
+      transform: rotate(45deg);
+    }
   }
 }
