@@ -174,6 +174,7 @@ body {
 }
 
 .registration {
+  z-index: 2;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -261,6 +262,156 @@ body {
 }
 .registration__close:hover {
   transform: rotate(45deg);
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+
+  .header__main_right {
+    margin-left: -170px;
+  }
+
+  .main__heading {
+    text-align: center;
+  }
+
+  .main__items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    margin-top: 90px;
+    margin-bottom: 105px;
+  }
+
+  .footer__contains {
+    z-index: 1;
+  }
+
+  .footer__img {
+    z-index: -1;
+  }
+
+  .footer__heading {
+    margin-left: 20px;
+  }
+
+  .footer__button {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 667px) {
+  .center {
+    padding-left: calc(50% - 170px);
+    padding-right: calc(50% - 170px);
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation__block:last-child {
+    margin-left: 7px;
+    margin-top: 10px;
+  }
+
+  .header__main {
+    margin-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .header__main_left {
+    margin-top: 0;
+  }
+
+  .header__heading {
+    font-size: 50px;
+    line-height: 50px;
+    width: 340px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .header__heading-mod {
+    font-size: 22px;
+    line-height: 28px;
+    width: 350px;
+    text-align: center;
+  }
+
+  .header__main_right {
+    display: none;
+  }
+
+  .header__button {
+    text-align: center;
+  }
+
+  .main {
+    margin-top: 60px;
+  }
+
+  .main__heading {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .main__items {
+    flex-wrap: nowrap;
+  }
+
+  .main__item {
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main__item_contains {
+    margin: 10px;
+  }
+
+  .main__item-img {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  .main__item-heading {
+    margin-bottom: 10px;
+  }
+
+  .footer__img {
+    display: none;
+  }
+
+  .footer__heading {
+    font-size: 24px;
+    line-height: 40px;
+    width: 300px;
+  }
+
+  .registration__form {
+    width: 100%;
+    height: 100%;
+  }
+
+  .registration__text {
+    margin-left: 20px;
+  }
+
+  .registration__input {
+    width: 90%;
+  }
+
+  .registration__button {
+    width: 90%;
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
